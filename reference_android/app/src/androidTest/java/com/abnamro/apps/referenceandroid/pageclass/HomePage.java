@@ -2,7 +2,6 @@ package com.abnamro.apps.referenceandroid.pageclass;
 
 
 
-import com.abnamro.apps.referenceandroid.R;
 import com.abnamro.apps.referenceandroid.helpers.Helper;
 import com.abnamro.apps.referenceandroid.pageobjects.HomePageObjects;
 
@@ -88,10 +87,9 @@ public class HomePage extends Helper {
     {
         // Tap on Ellipsis and navigate to settings
         tapAnElement(homeObject.overFlowMenuButton);
+        delay(1000);
         isElementDisplayed(homeObject.settingsLink);
-//        verifyText(homeObject.settingsLink ,HomePageObjects.settingsText);
-
-        verifyText(homeObject.settingsLink ,R.string.action_settings);
+        verifyText(homeObject.settingsLink ,HomePageObjects.settingsText);
 
     }
 }
