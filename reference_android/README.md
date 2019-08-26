@@ -18,13 +18,15 @@ PSPS. Please use mobile native tools. (Tests written on Java are accepted too).
 
 Solution : 
 
-Written 3 test cases 
+Written 2 test classes for potrait and landscape mode contains 4 test cases each
 	1.verifyAllElementsInMainPage()
 	2.verifyMessageIconFunctionality()
-	3.verifyOverFlowMenuButton()
+	3.verifyOverFlowMenuButtonFunctionality()
+	4.verifySnackbarTextAndSettingsLinkHidden()
+ 
 Implemented page object model for better maintenance
 Added helper class with user defined generic functions 
 Included id for elements without accesibility id
-Added comments for all functions
+Added comments or description for all functions
 Tried to implement BDD - Cucumber , but it was not completed
 

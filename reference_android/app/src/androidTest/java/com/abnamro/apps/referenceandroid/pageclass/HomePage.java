@@ -32,7 +32,6 @@ public class HomePage extends Helper {
         isElementDisplayed(homeObject.pageTitle);
         isElementDisplayed(homeObject.toolBar);
         isElementDisplayed(homeObject.overFlowMenuButton);
-        isElementDisplayed(homeObject.navigationBar);
         isElementDisplayed(homeObject.messageIcon);
         isElementDisplayed(homeObject.body);
         isElementDisplayed(homeObject.bodyTextHelloWorld);
@@ -72,7 +71,13 @@ public class HomePage extends Helper {
        isTextNotDisplayed(HomePageObjects.messageText);
     }
 
-
+    /**
+     * Function to verify that settings text has hidden
+     */
+    public void verifySettingsTextNotavailable(){
+        delay(3000);
+        isTextNotDisplayed(HomePageObjects.settingsText);
+    }
 
     /**
      * Function to tap on more icon then settings

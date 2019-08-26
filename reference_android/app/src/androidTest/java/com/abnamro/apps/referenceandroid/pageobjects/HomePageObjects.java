@@ -15,7 +15,6 @@ public  class HomePageObjects {
     public Matcher statusBar = withId(android.R.id.statusBarBackground);
     public Matcher body = ViewMatchers.withId(R.id.fragment);
     public Matcher toolBar = withId(R.id.toolbar);
-    public Matcher navigationBar = withId(android.R.id.navigationBarBackground);
     public Matcher messageIcon = withId(R.id.fab);
     public Matcher overFlowMenuButton = withContentDescription("More options");
     public Matcher bodyTextHelloWorld = withId(R.id.helloworldtext);
