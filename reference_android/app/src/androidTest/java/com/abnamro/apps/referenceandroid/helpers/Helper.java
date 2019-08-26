@@ -46,6 +46,15 @@ public class Helper {
     {
         onView(withText(text)).check(doesNotExist());
     }
+    /**
+     * This function will verify that particular text is not available
+     * @param text : int , resource id from xml
+     */
+    protected void isTextNotDisplayed(int text)
+
+    {
+        onView(withText(text)).check(doesNotExist());
+    }
 
 
     /**
@@ -59,6 +68,15 @@ public class Helper {
 
     }
 
+    /* * This function will verify that particular text is available
+     * @param element : Matcher , Element contains searching text eg: withId(android.R.id.statusBarBackground);
+     * @param  expectedText : int , resource id from xml
+    */
+    protected void verifyText(Matcher element, int expectedText)
+    {
+        final ViewInteraction check = onView(element).check(matches(withText(expectedText)));
+
+    }
     /**
      * This function will introduce delay for specified time
      * @param time : long , Time to wait in milli seconds

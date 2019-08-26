@@ -16,17 +16,20 @@ PS. We don't expect you to spend weeks (and sleepless nights) on doing it. Lets 
 PSPS. Please use mobile native tools. (Tests written on Java are accepted too).
 
 
-Solution : 
+Solution :  
 
-Written 2 test classes for potrait and landscape mode contains 4 test cases each
+a)Written 2 test classes for potrait and landscape mode contains 4 test cases each
 	1.verifyAllElementsInMainPage()
 	2.verifyMessageIconFunctionality()
 	3.verifyOverFlowMenuButtonFunctionality()
 	4.verifySnackbarTextAndSettingsLinkHidden()
  
-Implemented page object model for better maintenance
-Added helper class with user defined generic functions 
-Included id for elements without accesibility id
-Added comments or description for all functions
-Tried to implement BDD - Cucumber , but it was not completed
+b)Implemented page object model for better maintenance
+c)Added helper class with user defined generic functions 
+d)Included id for elements without accesibility id
+e)Added comments or description for all functions
+f) Test Report named "Test Results - referenceandroid.html" available in reference_android folder
+
+Note : Executed in AVD Pixel XL API
+
 
